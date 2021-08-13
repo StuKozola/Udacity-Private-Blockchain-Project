@@ -1,0 +1,107 @@
+{
+	"info": {
+		"_postman_id": "a8995aad-51a7-4097-86be-8b08d1543ed8",
+		"name": "udacity-private-blockchain-project",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Genesis Block",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/block/height/0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"block",
+						"height",
+						"0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Send wallet address",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"address\":\"tb1qntvm3yejta0lha976puhldrney65u3z7kudej0\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/requestValidation",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"requestValidation"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Submit star",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"address\":\"muap1YTZn62e1GkYvdSDcPe96JCnhPyGKN\",\n\t\"signature\":\"INEWUj9O1fpUA4HOhVWdNQaZ/rfdOBE7uxvaThCtdZr/btUcUlHmDyDEtoLfxFJmEC4v1mE5NsdzYGV6OsB3krU=\",\n\t\"message\":\"muap1YTZn62e1GkYvdSDcPe96JCnhPyGKN:1628864269:starRegistry\",\n\t\"star\": {\n         \"dec\": \"68° 52' 56.9\",\n         \"ra\": \"16h 29m 1.0s\",\n         \"story\": \"Testing the story 4\"\n     }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/submitstar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"submitstar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Retrieve my stars",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/blocks/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"blocks",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
