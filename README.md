@@ -19,7 +19,7 @@ node app.js
 The application is will be available on http://localhost:8000
 
 ## Testing
-Testing can be performed using `curl` or Postman.  Shown below are the steps for testing the applciation with Postman with the [Postman collection](udacity-private-blockchain-project.postman_collection.json)
+Testing can be performed using `curl` or Postman.  Shown below are the steps for testing the applciation with Postman using the test cases in the [Postman collection](udacity-private-blockchain-project.postman_collection.json)
 
 Step 1: Create/test the genesis block
 
