@@ -41,3 +41,7 @@ Step 4: Submit a star
 Step 5: Retrieve listing of stars by owner
 
 ![Retrieve list of stars by owner](screenshots/retrieve_stars.png)
+
+Step 6: Validate the blockchain of stars
+
+![Validate the chain](screenshots/validateChain.png)
